@@ -9,10 +9,10 @@ def list_division(my_list_1, my_list_2, list_length):
                 next_length = next_length + 1
                 if isinstance(item, int) or isinstance(item, float):
                     if len(my_list_2) > index:
-                        denominateur = my_list_2[index]
-                        if isinstance(denominateur, int) or isinstance(denominateur, float):
-                            if denominateur != 0:
-                                quotient = item // denominateur
+                        deno = my_list_2[index]
+                        if isinstance(deno, int) or isinstance(deno, float):
+                            if deno != 0:
+                                quotient = item // deno
                                 new_list[list_length_2] = float(quotient)
                             else:
                                 new_list[list_length_2] = 0
