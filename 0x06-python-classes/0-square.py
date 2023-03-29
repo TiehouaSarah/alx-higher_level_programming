@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+
+"""empty class Square that defines a square"""
+
 class Square:
+    """Square constructor"""
     def __init__(self):
         print("hello world")
 
