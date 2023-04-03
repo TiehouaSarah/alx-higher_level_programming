@@ -3,6 +3,7 @@
 
 
 class Rectangle:
+    """ Rectangle class """
     def __init__(self, width=0, height=0):
         """ init function """
         self.__width = width
@@ -10,10 +11,12 @@ class Rectangle:
 
     @property
     def width(self):
+        """ width getter """
         return self.__width
 
     @width.setter
     def width(self, value):
+        """ width setter """
         if not isinstance(value, int):
             raise Exception("width must be an integer")
         if value < 0:
@@ -22,10 +25,12 @@ class Rectangle:
 
     @property
     def height(self):
+        """ height property """
         return self.__height
 
     @height.setter
     def height(self, value):
+        """height setter """
         if not isinstance(value, int):
             raise Exception("height must be an integer")
         if value < 0:
