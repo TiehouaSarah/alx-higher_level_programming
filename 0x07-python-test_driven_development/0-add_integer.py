@@ -1,19 +1,10 @@
 #!/usr/bin/python3
+""" DOCUMENTATION DE LA FONCTION """
+
 
 def add_integer(a, b=98):
-    """ ADDITION DE DEUX NOMBRES
-
-     >>> add_integer(1, 2)
-     3
-
-     >>> add_integer(100, -2)
-     98
-
-     >>> add_integer(2)
-     100
-
-     >>> add_integer(100.3, -2)
-     98
+    """
+    ADDITION DE DEUX NOMBRES
     """
     if not (isinstance(a, int) or isinstance(a, float)):
         raise TypeError("a must be an integer")

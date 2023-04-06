@@ -1,3 +1,10 @@
+============================
+doctest for 0-add_integer.py
+============================
+``add_integer()`` returns the sum of its arguments
+
+SUCCESSFUL TEST CONDITIONS
+==========================
 >>> add_integer = __import__('0-add_integer').add_integer
 >>> add_integer(1, 2)
 3
