@@ -14,7 +14,7 @@ def matrix_divided(matrix, div):
     row_len = len(matrix[0])
     new_matrix = []
     for row in matrix:
-        if type(row) != list or len(row) != row_len:
+        if type(row) != list:
             raise TypeError(
                 "matrix must be a matrix (list of lists) of integers/floats")
         if len(row) != row_len:
@@ -22,8 +22,8 @@ def matrix_divided(matrix, div):
         row_result = []
         for elem in row:
             if type(elem) not in [int, float]:
-                raise TypeError("matrix must be a matrix " /
-                                "(list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix \
+                                (list of lists) of integers/floats")
             cal = round(elem / div, 2)
             row_result.append(cal)
             if elem == row[-1]:
